@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/stranky",
+      "handler": "stranky.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/stranky/count",
+      "handler": "stranky.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/stranky/:id",
+      "handler": "stranky.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/stranky",
+      "handler": "stranky.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/stranky/:id",
+      "handler": "stranky.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/stranky/:id",
+      "handler": "stranky.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

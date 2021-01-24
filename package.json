@@ -1,0 +1,42 @@
+{
+  "name": "stromikstrapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^24.0.0",
+    "@ckeditor/ckeditor5-react": "^2.1.0",
+    "pg": "^8.5.1",
+    "pg-connection-string": "^2.4.0",
+    "strapi": "3.4.4",
+    "strapi-admin": "3.4.4",
+    "strapi-utils": "3.4.4",
+    "strapi-plugin-content-type-builder": "3.4.4",
+    "strapi-plugin-content-manager": "3.4.4",
+    "strapi-plugin-users-permissions": "3.4.4",
+    "strapi-plugin-email": "3.4.4",
+    "strapi-plugin-upload": "3.4.4",
+    "strapi-provider-upload-cloudinary": "3.4.4",
+    "strapi-connector-bookshelf": "3.4.4",
+    "knex": "<0.20.0",
+    "sqlite3": "5.0.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "71a13527-6b2e-482f-9f04-c3cb3c14095b"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

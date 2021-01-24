@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponzori",
+  "info": {
+    "name": "Sponzori",
+    "displayName": "Sponzoři",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Nazev": {
+      "type": "string",
+      "required": true
+    },
+    "Vyska": {
+      "type": "string"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Poradi": {
+      "type": "integer"
+    },
+    "Odkaz": {
+      "type": "string",
+      "required": false
+    },
+    "Okraj": {
+      "type": "integer"
+    }
+  }
+}

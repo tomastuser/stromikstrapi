@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lide",
+  "info": {
+    "name": "Lide",
+    "displayName": "Lidé",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Jmeno": {
+      "type": "string",
+      "required": true
+    },
+    "Pozice": {
+      "type": "string",
+      "required": true
+    },
+    "Popis": {
+      "type": "richtext"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

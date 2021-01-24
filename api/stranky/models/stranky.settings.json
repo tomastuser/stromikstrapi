@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stranky",
+  "info": {
+    "name": "stranky",
+    "displayName": "Stránky",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Nazev": {
+      "type": "string",
+      "required": true
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
